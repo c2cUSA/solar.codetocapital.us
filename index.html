@@ -21,9 +21,16 @@
       max-width: 300px;
       box-shadow: 0 0 12px rgba(0,184,107,0.4);
       transition: transform 0.2s ease-in-out;
+      text-align: center;
     }
     .card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(127,255,0,0.7); }
-    .card h3 { margin-top: 0; color: #7FFF00; }
+    .card h3 { margin-top: 0; color: #7FFF00; font-size: 1.2rem; }
+    .emoji { display: block; font-size: 2rem; margin-bottom: 0.5rem; animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
     .btns { margin-top: 2rem; }
     .btns a {
       display: inline-block; margin: 0 0.5rem; padding: 0.6rem 1.2rem;
@@ -34,7 +41,7 @@
     .btn-wallet { background-color: #7FFF00; color: #000; }
     .comingsoon { margin-top: 2rem; font-size: 1.1rem; color: #7FFF00; }
     section { margin-top: 3rem; }
-    section h3 { color: #7FFF00; margin-bottom: 1rem; }
+    section h3 { color: #7FFF00; margin-bottom: 1rem; text-align: center; }
     footer {
       background-color: #000; padding: 1rem 2rem; font-size: 0.85rem;
       color: #bfbfbf; text-align: center; margin-top: 3rem; line-height: 1.5;
@@ -56,13 +63,14 @@
 
     <!-- Top Ecosystem Cards -->
     <div class="cards">
-      <div class="card"><h3>Green Credits</h3><p>Solar kWh → verifiable on-chain credits.</p></div>
-      <div class="card"><h3>Yield Streams</h3><p>Route production revenue to supporters.</p></div>
-      <div class="card"><h3>Auditable</h3><p>Immutable logs and public metrics.</p></div>
+      <div class="card"><span class="emoji">🌱</span><h3>Green Credits</h3><p>Solar kWh → verifiable on-chain credits.</p></div>
+      <div class="card"><span class="emoji">💸</span><h3>Yield Streams</h3><p>Route production revenue to supporters.</p></div>
+      <div class="card"><span class="emoji">📊</span><h3>Auditable</h3><p>Immutable logs and public metrics.</p></div>
     </div>
 
     <div class="btns">
       <a href="mailto:admin@codetocapital.us" class="btn-contact">Contact</a>
+      <a href="https://github.com/codetocapital" target="_blank" class="btn-github">GitHub</a>
       <a href="#" class="btn-wallet">🔗 Connect Wallet</a>
     </div>
 
@@ -72,11 +80,11 @@
     <section>
       <h3>🌞 Solar Farms for Crypto Mining</h3>
       <div class="cards">
-        <div class="card"><h3>Land Acquisition</h3><p>20–50 acres in CA & TX for solar farms powering blockchain infra.</p></div>
-        <div class="card"><h3>Mining Hardware</h3><p>Deploy Antminer ASIC rigs & bulk GPU cards for diverse algorithms.</p></div>
-        <div class="card"><h3>Dynamic Algorithms</h3><p>Switch mining focus to the most profitable coins in real time.</p></div>
-        <div class="card"><h3>Sustainability</h3><p>Clean, solar-powered operations ensure eco-friendly crypto mining.</p></div>
-        <div class="card"><h3>On-Chain Rewards</h3><p>Revenue share & proof-of-green via Solana smart contracts.</p></div>
+        <div class="card"><span class="emoji">🏞️</span><h3>Land Acquisition</h3><p>20–50 acres in CA & TX for solar farms powering blockchain infra.</p></div>
+        <div class="card"><span class="emoji">⚙️</span><h3>Mining Hardware</h3><p>Deploy Antminer ASIC rigs & bulk GPU cards for diverse algorithms.</p></div>
+        <div class="card"><span class="emoji">🔀</span><h3>Dynamic Algorithms</h3><p>Switch mining focus to the most profitable coins in real time.</p></div>
+        <div class="card"><span class="emoji">♻️</span><h3>Sustainability</h3><p>Clean, solar-powered operations ensure eco-friendly crypto mining.</p></div>
+        <div class="card"><span class="emoji">🔗</span><h3>On-Chain Rewards</h3><p>Revenue share & proof-of-green via Solana smart contracts.</p></div>
       </div>
     </section>
   </main>
@@ -85,6 +93,7 @@
     © 2025 C2C Consulting LLC — Registered with FinCEN as MSB · BSA ID: 31000309132692 ·<br/>
     All apps are non-custodial, Solana-native, and interconnected by the C2C Token.<br/>
     Solana / Phantom Wallet support. Made in USA.<br/><br/>
-     </footer>
+    <em>All content provided is for entertainment purposes only. Please make responsible financial decisions and consult professionals for serious matters.</em>
+  </footer>
 </body>
 </html>
